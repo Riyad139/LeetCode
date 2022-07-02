@@ -1,4 +1,4 @@
-#In this problem we have to find out nth prime Number !
+//In this problem we have to find out nth prime Number !
 //Input : T (test case) and T number of Integer q
 //Output: q'th prime number in a newline.
 
