@@ -23,10 +23,12 @@ int nthTermOfPrime(int n){
     step1:
     isPrime = 1;
     lastNum++;
-   // as we know every Integer is a prime number or a unique product of two prime numbers, so we will check our lastNum only with our prime numbers in 
-   // array if lastNumber is divisible by any of the prime numbers then the number will not be a prime number so we just jump back to the step1 else add the 
-    // new prime number in our array .
-    
+
+    /* as we know every Integer is a prime number or a unique product of
+      two prime numbers, so we will check our lastNum only with our prime numbers in 
+      array if lastNumber is divisible by any of the prime numbers then the number will not be a prime number so we just jump back to the step1 else add the 
+      new prime number in our array .
+    */    
     for(int i = 0; i < prime.size();i++){
       if(!(lastNum%prime[i])){
         isPrime = 0;
