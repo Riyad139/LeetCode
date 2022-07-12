@@ -29,7 +29,7 @@ int nthTermOfPrime(int n){
       array if lastNumber is divisible by any of the prime numbers then the number will not be a prime number so we just jump back to the step1 else add the 
       new prime number in our array .
     */    
-    for(int i = 0; i < prime.size();i++){
+    for(int i = 0; i < prime.size() && prime[i] <= lastNum/2 ;i++){
       if(!(lastNum%prime[i])){
         isPrime = 0;
         goto step1;
