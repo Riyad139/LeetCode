@@ -1,6 +1,6 @@
 problem link https://leetcode.com/problems/valid-parentheses/
 
-# well I implemented this solution in java but you can get the basic logic :) ....
+# well I have implemented this solution in java but you can get the basic logic :) ....
 
 public boolean isValid(String str) {
         
