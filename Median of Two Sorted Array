@@ -1,6 +1,6 @@
 #Problem link is https://leetcode.com/problems/median-of-two-sorted-arrays/
  
- #merger two sorted array into one new array and find the median .
+ #merge two sorted array into one new array and find the median .
 
  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         
