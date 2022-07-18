@@ -1,0 +1,20 @@
+#Problem link https://leetcode.com/problems/coin-change-2/
+
+int change(int amount, vector<int>& coins) {
+     
+     int ways[5001] = {};
+        
+      ways[0] = 1;
+
+       for(int i = 0; i < coins.size();i++){
+        
+        if(coins[i] <= amount)
+          for(int j = coins[i];j <= amount;j++){
+          ways[j] += ways[j-coins[i]]; 
+        }
+  }
+  
+  return ways[amount];
+    }
+
+
