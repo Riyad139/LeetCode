@@ -1,0 +1,45 @@
+# problem link : https://leetcode.com/problems/3sum-closest/submissions/
+
+
+int threeSumClosest(vector<int>& nums, int target) {
+
+  int res,deff=100000;
+  
+  sort(nums.begin(),nums.end());
+  
+  int curr=-1001,currSum = 0;
+  
+  for(int i = 0; i < nums.size();i++){
+  
+    if(curr == nums[i])
+      continue;
+      
+    curr = nums[i]; 
+     
+     int l = i+1;
+     
+     int r = nums.size()-1;
+   
+    while(l < r){
+      
+      currSum = curr+nums[l]+nums[r];
+      
+      if(currSum == target) return currSum;
+      
+      if(currSum < target) l++;
+      
+      if(currSum > target) r--;
+      
+      if(deff > abs(target-currSum)){
+      
+       res = currSum;
+       
+       deff = abs(target-currSum);
+      }
+   
+    }
+  
+  }
+  
+  return res;
+}
