@@ -1,4 +1,4 @@
-
+# https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
 vector<int> searchRange(vector<int>& nums, int target) {
         if(nums.size() == 1 && nums[0] == target){
